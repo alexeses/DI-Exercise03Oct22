@@ -12,26 +12,17 @@ import java.util.Scanner;
 
 public class Main {
 
-    // Declaramos la variable
-    private static int radio;
-
-
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        getCircunference();ç
+        double radio;
+        double area;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el radio de la circunferencia: ");
+        radio = 2 * Math.PI * sc.nextDouble();
+        area = Math.PI * Math.pow(radio, 2);
+        System.out.println("La longitud de la circunferencia es: " + radio + " y el area es: " + area);
         sc.close();
 
-
-    }
-
-    private static double getCircunference() {
-
-        System.out.print("> Introduce el radio de la circunferencia: ");
-        radio = sc.nextInt();
-
-
-
-        return Math.PI * Math.pow(radio, 2);
     }
 }
