@@ -82,10 +82,15 @@ public class Main {
                 break;
             default:
                 System.out.println("El numero introducido no es valido");
+                days = 0;
                 break;
         }
 
-        System.out.println("El mes de " + monthName + " tiene " + days + " dias");
+        if (days != 0) {
+            System.out.println("El mes de " + monthName + " tiene " + days + " dias");
+
+        }
+
     }
 
 }
